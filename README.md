@@ -93,8 +93,9 @@ y_pred= lr.predict(X_test)
 ```
 
 #### We want to visualize the Train set. 
-> + Plotting the regression line. The regression line is the predicted line as close as possible to the real salary points. And it follows a staright line, hence use the plot() function of matplotlib.pyplot
+> Plotting the regression line. The regression line is the predicted line as close as possible to the real salary points. And it follows a staright line, hence use the plot() function of matplotlib.pyplot
 ```python
+# These are for the real observation
 plt.scatter(X_train, y_train, color= 'blue')
 plt.plot(X_train, lr.predict(X_train), color= 'purple')
 plt.title('Salary Vs Work Experience')
@@ -104,12 +105,21 @@ plt.show()
 ```
 
 #### We want to visualize the Test set. 
+> The observation here were not trained with the model. They are more like new values. Lets see if the linear line will be close to the real values like in the training set.
+
 ```python
+#These are for the real observation
 plt.scatter(X_train, y_train, color= 'blue')
+
+#We do not need to change test here as regression gives a unique line for both cases
 plt.plot(X_train, lr.predict(X_train), color= 'purple')
 plt.title('Salary Vs Work Experience')
 plt.xlabel('Work Experience')
 plt.ylabel('Salary')
 plt.show()
 ```
+[To view the Graph, Click Here](https://colab.research.google.com/drive/14XbRoJjwGE-fDUezP3QtNszhLmAnA-yk#scrollTo=cbOFcIvmOIc8)
+
+### Output:
+> From the graph, Someone with 8 years experience, in the linear line, is predicted to have a salary of about 11,000. Checking the real dataset, we see that 7.9 is about 11,000, hence, the predicted value is not far from the real value.
 
