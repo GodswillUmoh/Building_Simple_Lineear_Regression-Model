@@ -131,7 +131,7 @@ plt.show()
 ```python
 print(lr.predict([[10]]))
 ```
-### Output
+### Output: from this result of 12k, the read value of 10.3 is about 12k, hence, the prediction is close
 ```python
 [128732.9060138]
 ```
