@@ -78,8 +78,38 @@ print(y_test)
 ```
 
 ### Training the Simple Linear Regression model on the Training set
+#### The fit() method is a method of the regression that is used on the training set(X_train, y_train)
 ```python
-dataset = pd.read_csv('salary_data_c.csv')
-dataset.head()
+lr = LinearRegression()
+lr.fit(X_train, y_train)
+```
+
+#### predict is also a method of the regression use on the test set. 
+> It is the independent variable that is use in the predict to predict the dependent variable, in this case, salary. From this explanation, is it X_test or y_test that we use with the predict() method?
+> Answer is X_test because we want to use the independent variable (X_test) to predict the y (dependent variable being salary). y_test contains the real salary, y_pred variable is predicting salary. Hence, y_pred contains the predicted salary
+
+```python
+y_pred= lr.predict(X_test)
+```
+
+#### We want to visualize the Train set. 
+> + Plotting the regression line. The regression line is the predicted line as close as possible to the real salary points. And it follows a staright line, hence use the plot() function of matplotlib.pyplot
+```python
+plt.scatter(X_train, y_train, color= 'blue')
+plt.plot(X_train, lr.predict(X_train), color= 'purple')
+plt.title('Salary Vs Work Experience')
+plt.xlabel('Work Experience')
+plt.ylabel('Salary')
+plt.show()
+```
+
+#### We want to visualize the Test set. 
+```python
+plt.scatter(X_train, y_train, color= 'blue')
+plt.plot(X_train, lr.predict(X_train), color= 'purple')
+plt.title('Salary Vs Work Experience')
+plt.xlabel('Work Experience')
+plt.ylabel('Salary')
+plt.show()
 ```
 
