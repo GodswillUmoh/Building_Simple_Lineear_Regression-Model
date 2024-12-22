@@ -122,4 +122,17 @@ plt.show()
 
 ### Output:
 > From the graph, Someone with 8 years experience, in the linear line, is predicted to have a salary of about 11,000. Checking the real dataset, we see that 7.9 is about 11,000, hence, the predicted value is not far from the real value.
+> Also good to note that, we got a perfect linear regression line because the raw data contains values that are linear in nature. Not all dataset will be in this format. Hence, we need to also carryout for non-linear model dataset
+
+### Predicting a single value. 
+> For example, how do you predict the salary of an employee with 10 years of experience.
+
+### Code for predicting single value
+```python
+print(lr.predict([[10]]))
+```
+### Output
+```python
+[128732.9060138]
+```
 
