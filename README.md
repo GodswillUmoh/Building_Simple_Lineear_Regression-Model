@@ -118,7 +118,7 @@ plt.xlabel('Work Experience')
 plt.ylabel('Salary')
 plt.show()
 ```
-#### [To view the Graph, Click Here](https://colab.research.google.com/drive/14XbRoJjwGE-fDUezP3QtNszhLmAnA-yk#scrollTo=cbOFcIvmOIc8)
+[To view the Graph, Click Here](https://colab.research.google.com/drive/14XbRoJjwGE-fDUezP3QtNszhLmAnA-yk#scrollTo=cbOFcIvmOIc8)
 
 ### Output:
 > From the graph, Someone with 8 years experience, in the linear line, is predicted to have a salary of about 11,000. Checking the real dataset, we see that 7.9 is about 11,000, hence, the predicted value is not far from the real value.
