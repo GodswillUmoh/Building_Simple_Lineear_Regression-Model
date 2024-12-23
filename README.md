@@ -135,4 +135,9 @@ print(lr.predict([[10]]))
 ```python
 [128732.9060138]
 ```
+### Note: It is important to note that the predict() function takes a 2D array, this is why the 12 is inserted into two square brackets [[]].
+> In summary, putting 12 into a double pair of square brackets makes the input exactly a 2D array:
+> + 12→scalar
+> + [12]→1D array
+> + [[12]]→2D array
 
