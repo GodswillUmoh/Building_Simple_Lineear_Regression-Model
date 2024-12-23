@@ -118,7 +118,7 @@ plt.xlabel('Work Experience')
 plt.ylabel('Salary')
 plt.show()
 ```
-[To view the Graph, Click Here](https://colab.research.google.com/drive/14XbRoJjwGE-fDUezP3QtNszhLmAnA-yk#scrollTo=cbOFcIvmOIc8)
+#### [To view the Graph, Click Here](https://colab.research.google.com/drive/14XbRoJjwGE-fDUezP3QtNszhLmAnA-yk#scrollTo=cbOFcIvmOIc8)
 
 ### Output:
 > From the graph, Someone with 8 years experience, in the linear line, is predicted to have a salary of about 11,000. Checking the real dataset, we see that 7.9 is about 11,000, hence, the predicted value is not far from the real value.
@@ -135,9 +135,24 @@ print(lr.predict([[10]]))
 ```python
 [128732.9060138]
 ```
-### Note: It is important to note that the predict() function takes a 2D array, this is why the 12 is inserted into two square brackets [[]].
+### Note: 
+It is important to note that the predict() function takes a 2D array, this is why the 12 is inserted into two square brackets [[]].
 > In summary, putting 12 into a double pair of square brackets makes the input exactly a 2D array:
 > + 12→scalar
 > + [12]→1D array
 > + [[12]]→2D array
+
+## Getting values for coefficient and Intercept
+```python
+# To get these coefficients we called the "coef_" and "intercept_" attributes from the lr object
+print(lr.coef_)
+print(lr.intercept_)
+```
+## Output: Attributes in Python are different to methods and usually return a simple value or an array of values.
+```python
+Coefficient [9163.72413366]
+Intercept 37095.66467721284
+```
+> Therefore, the equation of our simple linear regression model becomes:
+> __Salary=99163.72×YearsOfWork+37095.66__
 
