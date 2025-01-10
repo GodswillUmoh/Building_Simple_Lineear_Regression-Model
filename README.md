@@ -1,7 +1,7 @@
 # Building_Simple_Lineear_Regression-Model
 ## Simple Linear Regression
 > ```pythob
-> The basic steps in building a simple lenaer Regression include:
+> The basic steps in building a simple linaer Regression include:
 > + Importing the libraries
 > + Importing the dataset
 > + Splitting the dataset into the Training set and Test set
@@ -112,8 +112,9 @@ plt.show()
 plt.scatter(X_train, y_train, color= 'blue')
 
 #We do not need to change test here as regression gives a unique line for both cases
+plt.scatter(X_test, y_test, color= 'blue')
 plt.plot(X_train, lr.predict(X_train), color= 'purple')
-plt.title('Salary Vs Work Experience')
+plt.title('Salary Vs Work Experience (Test Set)')
 plt.xlabel('Work Experience')
 plt.ylabel('Salary')
 plt.show()
