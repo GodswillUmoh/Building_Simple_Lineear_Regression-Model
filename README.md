@@ -85,8 +85,8 @@ lr.fit(X_train, y_train)
 ```
 
 #### predict is also a method of the regression use on the test set. 
-> It is the independent variable that is use in the predict to predict the dependent variable, in this case, salary. From this explanation, is it X_test or y_test that we use with the predict() method?
-> Answer is X_test because we want to use the independent variable (X_test) to predict the y (dependent variable being salary). y_test contains the real salary, y_pred variable is predicting salary. Hence, y_pred contains the predicted salary
+> + It is the independent variable that is use to predict the dependent variable, in this case, salary. From this explanation, is it X_test or y_test that we use with the predict() method?
+> + Answer is X_test because we want to use the independent variable (X_test) to predict the y (dependent variable being salary). y_test contains the real salary, y_pred variable is predicting salary. Hence, y_pred contains the predicted salary
 
 ```python
 y_pred= lr.predict(X_test)
